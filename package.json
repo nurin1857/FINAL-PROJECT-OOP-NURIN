@@ -1,0 +1,17 @@
+{
+  "name": "nutritionplan",
+  "version": "1.0.0",
+  "description": "Food nutrition and tracking application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "electron": "^45.2.1"
+  }
+}

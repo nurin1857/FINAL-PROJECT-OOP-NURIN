@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutritionPlan - My Food Diary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>NutritionPlan</h2>
+            <nav>
+                <a href="index.html">Food Nutrition</a>
+                <a href="itinerary.html" class="active">My Food Diary</a>
+                <a href="calculator.html">My Nutrition Calculator</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="food-header">
+                <h1>My Food Diary</h1>
+                <p>Record and manage your daily food intake.</p>
+            </header>
+
+            <section class="search-section">
+                <h2>Add Food Record</h2>
+                <form id="foodForm">
+                    <input type="text" id="diaryFood" placeholder="Food name" required>
+
+                    <label for="diaryDate">Food Date</label>
+                    <input type="date" id="diaryDate" required>
+
+                    <input type="number" id="diaryCalories" placeholder="Calories (kcal)" min="0" step="0.01" required>
+
+                    <input type="number" id="diaryProtein" placeholder="Protein (g)" min="0" step="0.1" required>
+
+                    <input type="number" id="diaryCarbs" placeholder="Carbohydrates (g)" min="0" step="0.1" required>
+
+                    <input type="number" id="diaryFat" placeholder="Fat (g)" min="0" step="0.1" required>
+
+                    <button type="submit" id="saveButton">Add Record</button>
+                </form>
+            </section>
+
+            <section class="results-section">
+                <h2>Daily Nutrition Summary</h2>
+
+                <label for="summaryDate">Select Date</label>
+                <input type="date" id="summaryDate">
+
+                <div id="dailyTotals">
+                    <p>Total Calories: 0 kcal</p>
+                    <p>Total Protein: 0 g</p>
+                    <p>Total Carbohydrates: 0 g</p>
+                    <p>Total Fat: 0 g</p>
+                </div>
+            </section>
+
+            <section class="recommendation-section">
+                <h2>Food Records</h2>
+                <div id="foodRecords">
+                    <p>No food records yet.</p>
+                </div>
+            </section>
+
+            <section class="results-section">
+                <h2>Saved Recommendations</h2>
+                <div id="savedRecommendations">
+                    <p>No saved recommendations yet.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="itinerary.js"></script>
+</body>
+</html>

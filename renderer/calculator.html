@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutritionPlan - My Nutrition Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <aside class="sidebar">
+            <h2>NutritionPlan</h2>
+
+            <nav>
+                <a href="index.html">Food Nutrition</a>
+                <a href="itinerary.html">My Food Diary</a>
+                <a href="calculator.html" class="active">My Nutrition Calculator</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="food-header">
+                <h1>My Nutrition Calculator</h1>
+                <p>Add your favourite foods and calculate their total nutrition.</p>
+            </header>
+
+            <section class="search-section">
+                <h2>Add Food</h2>
+
+                <div class="search-box">
+                    <input
+                        type="text"
+                        id="calculatorFoodInput"
+                        placeholder="Enter food name..."
+                    >
+                    <button id="calculatorSearchButton">Search</button>
+                </div>
+
+                <div id="calculatorSearchResults"></div>
+            </section>
+
+            <section class="results-section">
+                <h2>My Food List</h2>
+                <p class="calculator-note">Each food is calculated based on 100g.</p>
+
+                <div id="calculatorFoodList">
+                    <p>No food added yet.</p>
+                </div>
+            </section>
+
+            <section class="recommendation-section">
+                <h2>Total Nutrition</h2>
+
+                <div id="totalNutrition">
+                    <p>Total Calories: 0 kcal</p>
+                    <p>Total Protein: 0 g</p>
+                    <p>Total Carbohydrates: 0 g</p>
+                    <p>Total Fat: 0 g</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+    </script>
+    <script src="calculator.js"></script>
+</body>
+</html>

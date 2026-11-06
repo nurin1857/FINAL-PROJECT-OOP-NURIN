@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutritionPlan - Food Nutrition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>NutritionPlan</h2>
+            <nav>
+                <a href="index.html" class="active">Food Nutrition</a>
+                <a href="itinerary.html">My Food Diary</a>
+                <a href="calculator.html">My Nutrition Calculator</a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="food-header">
+                <h1>Food Nutrition</h1>
+                <p>Search for food and discover its nutritional information.</p>
+            </header>
+
+            <section class="search-section">
+                <h2>Search Food</h2>
+                <div class="search-box">
+                    <input type="text" id="foodInput" placeholder="Enter food name...">
+                    <button id="searchButton">Search</button>
+                </div>
+            </section>
+
+            <section class="diet-section">
+                <h2>Dietary Requirements</h2>
+                <select id="dietSelect">
+                    <option value="">Select your dietary preference</option>
+                    <option value="high-protein">High Protein</option>
+                    <option value="low-calorie">Low Calorie</option>
+                    <option value="low-carb">Low Carb</option>
+                    <option value="balanced">Balanced Diet</option>
+                </select>
+            </section>
+
+            <section class="results-section">
+                <h2>Nutrition Information</h2>
+                <div id="foodResults">
+                    <p>Search for a food to view its nutritional information.</p>
+                </div>
+            </section>
+
+            <section class="recommendation-section">
+                <h2>Food Recommendations</h2>
+                <div id="recommendationResults">
+                    <p>Your food recommendations will appear here.</p>
+                </div>
+                <button id="saveRecommendationButton">Save Recommendation</button>
+                <p id="saveMessage"></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
